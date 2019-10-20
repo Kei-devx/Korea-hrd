@@ -1,0 +1,26 @@
+.header{
+    width: 100%;
+    height: auto;
+    border: 2px dashed black;
+    text-decoration: underline white;
+}
+img{
+    width: 100%;
+    height: auto;
+    border: 2px dashed black;
+}
+.card{
+    width: 16%;
+    height: 150px;
+    border: 1px solid dodgerblue;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+.content{
+    width: 100%;
+    border: 2px dashed black;
+}
+.footer{
+    border: 2px dashed black;
+}

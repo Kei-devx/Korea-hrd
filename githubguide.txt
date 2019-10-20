@@ -1,0 +1,23 @@
+Create account in GitHub
+Create repositary: contain source coude
+Configuration with remote using cmd --> follow the instruction
+	first time only:
+	==================first repositary or new repositary=================
+	- git init(first time only)
+	- git add .
+	- git commit -m "your msg"
+	- git add remote origin ................(first time only)
+	- git push origin master(when you push new code to repositary)
+	==================Update code to existing repositary=================
+	You change sth on remote directly , make sure you already up to date 
+	if you are not yet up to date with remote > use:
+	- git add .
+	- git commit -m "your msg"
+	- git pull origin master
+	- git pull origin master
+	=====================================================================
+	+ ESC -> (shift ;) -> x -> Enter
+	=========================git lab======================================
+	+ git clone:
+		- git bash somewhere
+		- type -> git clone then paste the url

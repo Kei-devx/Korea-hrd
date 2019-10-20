@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+    <style>
+        table,
+        th,
+        tr,
+        td {
+            border: 1px solid black;
+            width: 400px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Invoice Table</h1>
+    <table align="center">
+        <tr>
+            <!-- row 1 -->
+            <th colspan="4">Invoice</th>
+        </tr>
+        <tr>
+            <!-- row2 -->
+            <th>No</th>
+            <th colspan="2">Item</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <!-- row3 -->
+            <td rowspan="2">1</td>
+            <td rowspan="2">
+                <ul>
+                    <li>Coke</li>
+                    <li>Pepsi</li>
+                </ul>
+            </td>
+            <td rowspan="2">
+                <img src="../images/coca.jpg" alt="Coca" width="100px" height="auto">
+                <img src="../images/pepsi.jpg" alt="Pepsi" width="100px" height="auto">
+            </td>
+            <td>10$</td>
+        </tr>
+        <tr>
+            <!-- row4 -->
+            <td>10$</td>
+        </tr>
+        <tr>
+            <!-- row5 -->
+            <td rowspan="2">2</td>
+            <td rowspan="2">
+                <ol>
+                    <li>Food</li>
+                    <li>Rice</li>
+                </ol>
+            </td>
+            <td rowspan="2">
+                <img src="../images/salmon.jpg" alt="Salmon" width="50px" height="auto">
+                <img src="../images/rice.jpg" alt="Rice" width="100px" height="auto">
+            </td>
+            <td rowspan="2">30$</td>
+        </tr>
+        <!-- row6 -->
+        <tr>
+        </tr>
+        <tr>
+            <!-- row7 -->
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+        </tr>
+        <tr>
+            <!-- row8 -->
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- row9 -->
+            <td colspan="3">Total:</td>
+            <!-- <td></td> -->
+            <!-- <td></td> -->
+            <td>50$</td>
+        </tr>
+    </table>
+</body>
+
+</html>

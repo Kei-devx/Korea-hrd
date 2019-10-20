@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style>
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        .lb1,
+        .lb2,
+        .lb3 {
+            text-align: right;
+            width: 15%;
+        }
+
+        .footer,
+        .click {
+            text-align: center;
+        }
+
+        #pa,
+        #email,
+        #pob,
+        #addr1,
+        #addr2 {
+            width: 96%;
+        }
+
+        #fn,
+        #kin,
+        #pn,
+        #father,
+        #mother {
+            width: 99%;
+        }
+
+
+        #op1,
+        #op2,
+        #ln {
+            width: 92%;
+        }
+
+        #ec {
+            width: 89%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>REGISTRATION FORM</h1>
+    <h2>Korea Software HRD Center Registration Form</h2>
+    <div class="header">
+        <form>
+            <table border="0" style="width: 100%;">
+                <tr>
+                    <td>March 17th, 2017</td>
+                    <td rowspan="5">
+                        <img src="../images/oreki.jpg" alt="anime boy icon" align="right">
+                    </td>
+                </tr>
+                <tr>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td>Korea Software HRD Center</td>
+                    <!-- <td></!-->
+                </tr>
+                <tr>
+                    <td>#12, St 323, Sangkat Boeung Kak II, Khan Toul Kork, Phnom Penh</td>
+                    <!-- <td></!-->
+                </tr>
+                <tr>
+                    <td>Tel: (+855) 23 991 314, Fax: (+855) 23 991 315</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td>Email: info.kshrd@gmail.com <br>
+                        facebook.com/ksignhrd
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+            </table>
+
+    <div>
+
+        <fieldset class="Personal">
+            <legend>Personal Information</legend>
+            <table border="0" style="width: 100%;">
+                <tr>
+                    <td class="lb1">
+                        <label>Khmer ID Number:</label>
+                    </td>
+                    <td style="width: 40%;">
+                        <input type="text" placeholder="Input Khmer ID Number" id="kin">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="lb1">
+                        <label>Fullname:</label>
+                    </td>
+                    <td class="ip">
+                        <input type="text" placeholder="Firstname" id="fn">
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Lastname" id="ln">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lb1">
+                        <label>Gender:</label>
+                    </td>
+                    <td>
+                        <select name="Gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="lb1">Date of Birth:</td>
+                    <td>
+                        <input type="date">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="lb1">Place of Birth:</td>
+                    <td colspan="2">
+                        <input type="text" placeholder="Place of birth" id="pob">
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td class="lb1">Permanent address:</td>
+                    <td colspan="2">
+                        <textarea name="PA" id="pa" rows="3"></textarea>
+                    </td>
+                    <!-- <td></td> -->
+                </tr>
+        </fieldset>
+        </table>
+
+    </div>
+    <div class="content1">
+
+        <fieldset class="contact">
+            <legend>Contact</legend>
+            <table border="0" style="width: 100%;">
+                <tr>
+                    <td class="lb2">
+                        <label>Contact:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="pn" id="pn" placeholder="Phone number">
+                    </td>
+                    <td>
+                        <label>Emergency Contact:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="ec" id="ec" placeholder="Emergency contact">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lb2">
+                        <label>Email:</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                    </td>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+            </table>
+        </fieldset>
+
+    </div>
+    <div class="content2">
+
+        <fieldset class="Family Background">
+            <legend>Family Background</legend>
+            <table border="0" style="width: 100%;">
+                <tr>
+                    <td class="lb3">
+                        <label>Father name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="father" id="father" placeholder="Father name">
+                    </td>
+                    <td style="width: 4%;">
+                        <label>Occupation:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="op1" id="op1" placeholder="Occupation">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lb3">
+                        <label>Address:</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea name="address1" id="addr1" rows="3">
+                            </textarea>
+                    </td>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td class="lb3">
+                        <label>Mother name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="mother" id="mother" placeholder="Mother name">
+                    </td>
+                    <td>
+                        <label>Occupation:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="op2" id="op2" placeholder="Occupation">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="lb3">
+                        <label>Address:</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea name="address2" id="addr2" rows="3">
+                            </textarea>
+                    </td>
+                    <!-- <td></td> -->
+                    <!-- <td></td> -->
+                </tr>
+            </table>
+        </fieldset>
+
+    </div>
+    <div class="footer">
+
+        <fieldset>
+            <legend>Type of course</legend>
+            <label>Starting date:</label>
+            <input type="radio" name="ITE" id="ite">ITE Course 2018
+            <input type="radio" name="Short" id="short">Short Course 2018
+        </fieldset>
+
+    </div>
+    <div class="click">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        </form>
+    </div>
+</body>
+
+</html>
