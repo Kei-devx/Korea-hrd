@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive</title>
+    <style>
+        .contrainer {
+            width: 1536px;
+        }
+        
+        @media screen and (max-width:575px) {
+            .contrainer {
+                width: 575px;
+            }
+            .box {
+                box-sizing: border-box;
+                width: 277px;
+                height: 100px;
+                margin: 5px;
+                background-color: orange;
+                float: left;
+            }
+        }
+        /* // Small devices (landscape phones, 576px and up) */
+        
+        @media screen and (min-width: 576px) {
+            .contrainer {
+                width: 576px;
+            }
+            .box {
+                box-sizing: border-box;
+                width: 288px;
+                height: 100px;
+                margin: 5px;
+                background-color: red;
+                float: left;
+            }
+        }
+        /* // Medium devices (tablets, 768px and up) */
+        
+        @media screen and (min-width: 768px) {
+            .contrainer {
+                width: 768px;
+            }
+            .box {
+                box-sizing: border-box;
+                width: 374px;
+                height: 100px;
+                margin: 5px;
+                background-color: skyblue;
+                float: left;
+            }
+        }
+        /* // Large devices (desktops, 992px and up) */
+        
+        @media screen and (min-width: 992px) {
+            .contrainer {
+                width: 992px;
+            }
+            .box {
+                box-sizing: border-box;
+                width: 486px;
+                height: 100px;
+                margin: 5px;
+                background-color: yellow;
+                float: left;
+            }
+        }
+        /* // Extra large devices (large desktops, 1200px and up) */
+        
+        @media screen and (min-width: 1200px) {
+            .contrainer {
+                width: 1200px;
+            }
+            .box {
+                box-sizing: border-box;
+                width: 230px;
+                height: 100px;
+                margin: 5px;
+                background-color: greenyellow;
+                float: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contrainer">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+
+</html>
