@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro-Js</title>
+</head>
+
+<body>
+    <h1 id="heading">にほんへようこそ！</h1>
+    <button
+        onclick="document.getElementById('heading').style.backgroundColor='black'; document.getElementById('heading').style.color='lightblue';document.getElementById('second').style.color='lightblue'">Click
+        to change background</button>
+    <button onclick="document.getElementById('heading').innerHTML='Welcome to Japan!'">Click to change heading</button>
+    <button ondblclick="alert('こんにちわ！')">React Event DoubleClick</button>
+    <br> <br>
+    <input type="text" name="" id="carname">
+    <button id="btn">Get Value</button>
+    <h2 id="content">Content goes here!</h2>
+    <script>
+        // write into html output
+        document.write('<h1 align="center" style="color:pink" id="second">おはようございますみなさん！</h1>')
+        // change image in html
+        var head = document.getElementById('heading');
+        head.style.color = 'pink';
+        head.style.textAlign = 'center';
+        head.style.backgroundColor = 'black';
+        // access to both element
+        var car = document.getElementById('carname');
+        var btn = document.getElementById('btn');
+        // handle event button
+        btn.onclick = function(){
+            // alert(car.value)
+            var heading = document.getElementById('content');
+            heading.innerHTML = `Value from input: <span style="color:red">${car.value}</span>`
+            car.value = ""
+        }
+    </script>
+    <img src="../images/animecouple.jpg" alt="" id="pic" style="width: 650px; height: auto;">
+    <button onclick="document.getElementById('pic').src='../images/boy.jpg'">Click to change image</button>
+</body>
+
+</html>

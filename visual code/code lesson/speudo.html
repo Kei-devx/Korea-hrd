@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Speudo Class</title>
+    <style>
+        input:checked+label {
+            background-color: skyblue;
+        }
+        
+        input:disabled {
+            background-color: seagreen;
+        }
+        
+        input:enabled {
+            background-color: yellow;
+        }
+        
+        input[type="email"]:invalid {
+            background-color: red;
+        }
+        
+        input[type="email"]:valid {
+            background-color: skyblue;
+        }
+        
+        h2:first-child {
+            background-color: lightblue;
+        }
+        
+        h2:last-of-type {
+            background-color: lightcoral;
+        }
+        
+        h2:nth-of-type(2) {
+            background-color: lightgreen;
+        }
+        
+        p::first-letter {
+            font-size: 100px;
+            color: red;
+        }
+        
+        p::first-line {
+            font-variant: small-caps;
+        }
+        
+         ::selection {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- First letter&line -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias illo, dolorum molestiae quisquam ex, dicta et at nihil provident obcaecati, porro fugit sit ipsum optio saepe. Sit sapiente pariatur quidem! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Culpa ullam asperiores error nisi. Blanditiis, earum commodi. Est veritatis magnam excepturi reiciendis, nisi animi possimus ea tenetur, inventore consequatur optio molestiae?</p>
+    <h2>First Child</h2>
+    <!-- speudo class -->
+    <!-- checked -->
+    <input type="checkbox" name="" id="">
+    <label for=""> HTML</label>
+    <input type="checkbox" name="" id="">
+    <label for=""> CSS</label>
+    <!-- disabled&enabled -->
+    <input type="text" name="" id="" disabled>
+    <input type="text" name="" id="">
+    <!-- valid&invalid -->
+    <input type="email" name="" id="">
+    <input type="email" name="" id="">
+    <!-- first&last child + first&last of type + nth of type child -->
+    <h2>Second Child</h2>
+    <h2>Third Child</h2>
+    <h2>Forth Child</h2>
+    <h2>Last Child</h2>
+</body>
+
+</html>
